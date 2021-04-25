@@ -1,0 +1,24 @@
+{
+    "name": "com.monitor1394.xugl",
+    "displayName": "XUGL",
+    "version": "1.0.0",
+    "unity": "2018.3",
+    "description": "UGUI Graphics Library.",
+    "keywords": [
+      "unity",
+      "XUGL",
+      "UGUI",
+      "graphic"
+    ],
+    "category": "graphic",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/monitor1394/XUGL.git"
+    },
+    "author": "monitor1394",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/monitor1394/XUGL/issues"
+    },
+    "homepage": "https://github.com/monitor1394/XUGL"
+  }
