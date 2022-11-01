@@ -44,6 +44,7 @@
 | UGL.DrawRoundCap( ) | 画圆帽 |
 | UGL.DrawDoughnut( ) | 画圆环 |
 | UGL.DrawCurves( ) | 画贝塞尔曲线 |
+| UGL.DrawEllipse( ) | 画椭圆 |
 
 ## 使用
 
@@ -86,9 +87,15 @@
 
 完整代码请查阅`Examples`：`UGLExample.cs`
 
-## 日志
+## 更新日志
 
-[更新日志](https://github.com/monitor1394/XUGL/blob/master/CHANGELOG.md)  
+* (2021.11.01) 增加绘制椭圆支持
+* (2021.11.01) 优化大部分绘图接口
+* (2021.09.12) 增加绘制对称圆角支持
+* (2021.09.12) 增加绘制渐变线段支持
+* (2021.08.02) 增加斑马线、点线和点划线的渐变支持
+* (2021.04.26) 增加渐变边框支持
+* (2021.04.24) Initial
 
 ## Licenses
 
