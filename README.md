@@ -18,7 +18,7 @@
   </a>
 </p>
 
-一款孵化自[XCharts](https://github.com/monitor1394/unity-ugui-XCharts)的`UGUI`图形库，可绘制点、线、面等其他常见的图形。通过重载 `UGUI` 的 `OnPopulateMesh()` 重新填充顶点缓冲区来实现绘制自定义图形效果。
+`XUGL`是一款基于UGUI实现的图形库。图表插件[XCharts](https://github.com/monitor1394/unity-ugui-XCharts)正是使用该图形库来实现图表的绘制。`XUGL`通过重载 `UGUI` 的 `OnPopulateMesh()` 重新填充顶点缓冲区来实现绘制自定义图形效果，可绘制点、线、箭头、三角形、正方形、圆形、扇形、环形、椭圆形等其他常见的图形，并支持绘制`SVG`矢量图。
 
 ## API
 
@@ -45,6 +45,10 @@
 | UGL.DrawDoughnut( ) | 画圆环 |
 | UGL.DrawCurves( ) | 画贝塞尔曲线 |
 | UGL.DrawEllipse( ) | 画椭圆 |
+| UGL.DrawEmptyDiamond( ) | 画空心菱形（空心钻石形状） |
+| UGL.DrawEmptyTriangle( ) | 画空心三角形 |
+| UGL.DrawPlus( ) | 画`+号` |
+| UGL.DrawMinus( ) | 画`+号` |
 
 ## 使用
 
@@ -96,7 +100,7 @@
 * (2021.09.12) 增加绘制渐变线段支持
 * (2021.08.02) 增加斑马线、点线和点划线的渐变支持
 * (2021.04.26) 增加渐变边框支持
-* (2021.04.24) Initial
+* (2021.04.24) 首次提交
 
 ## Licenses
 
