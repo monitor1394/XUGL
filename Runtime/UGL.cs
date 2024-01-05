@@ -6,7 +6,7 @@ namespace XUGL
 {
     /// <summary>
     /// UGUI Graphics Library.
-    /// |UGUI 图形库
+    /// ||UGUI 图形库
     /// </summary>
     public static class UGL
     {
@@ -1059,6 +1059,18 @@ namespace XUGL
             }
         }
 
+        public static void DrawRoundRectangleWithBorder(VertexHelper vh, Rect rect,
+            Color32 color, Color32 toColor, float[] cornerRadius, float borderWidth, Color32 borderColor,
+            float rotate = 0, float smoothness = 2)
+        {
+            DrawRoundRectangle(vh, rect.center, rect.width, rect.height, color, toColor, rotate, cornerRadius,
+                false, smoothness, false);
+            if (borderWidth > 0)
+            {
+                UGL.DrawBorder(vh, rect, borderWidth, borderColor, rotate, cornerRadius, true, smoothness);
+            }
+        }
+
         /// <summary>
         /// 绘制（圆角）边框
         /// </summary>
@@ -1933,7 +1945,7 @@ namespace XUGL
             }
         }
 
-        private static void DrawCurvesInternal(VertexHelper vh, List<Vector3> curvesPosList, float lineWidth,
+        public static void DrawCurvesInternal(VertexHelper vh, List<Vector3> curvesPosList, float lineWidth,
             Color32 lineColor, Direction dire, float currProgress = float.NaN)
         {
             if (curvesPosList.Count > 1)
@@ -2067,7 +2079,7 @@ namespace XUGL
 
         /// <summary>
         /// Draw plus sign.
-        /// |绘制加号
+        /// ||绘制加号
         /// </summary>
         /// <param name="vh"></param>
         /// <param name="center"></param>
@@ -2086,7 +2098,7 @@ namespace XUGL
 
         /// <summary>
         /// Draw minus sign.
-        /// |绘制减号
+        /// ||绘制减号
         /// </summary>
         /// <param name="vh"></param>
         /// <param name="center"></param>
